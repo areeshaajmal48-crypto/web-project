@@ -1,0 +1,169 @@
+
+/* General page styling */
+body {
+    background-color: #fff8f1;
+    color: #51434a;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Header and navigation */
+header {
+    background-color: #dff5e1;
+    text-align: center;
+    padding: 25px;
+    border-bottom: 4px solid #a8d8ad;
+}
+
+header h1 {
+    color: #38764d;
+}
+
+nav a {
+    display: inline-block;
+    color: #386c49;
+    text-decoration: none;
+    margin: 8px;
+    padding: 8px 12px;
+    background-color: #f2ffe9;
+    border-radius: 12px;
+}
+
+nav a:hover {
+    background-color: #c5eac9;
+}
+
+/* Intro section */
+.intro {
+    text-align: center;
+    padding: 25px;
+    margin: 20px;
+    background-color: #fff0f5;
+    border-radius: 15px;
+}
+
+/* Product gallery */
+.gallery {
+    text-align: center;
+    padding: 20px;
+    overflow: auto;
+}
+
+.item {
+    background-color: #f1e6ff;
+    border: 2px solid #d7c2f2;
+    padding: 15px;
+    margin: 12px;
+    width: 240px;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 15px;
+}
+
+.item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.item h3 {
+    color: #8255a5;
+}
+
+/* Video and audio */
+.video-section,
+.audio-section {
+    text-align: center;
+    padding: 25px;
+    margin: 20px;
+    background-color: #fff0d9;
+    border-radius: 15px;
+}
+
+video,
+audio {
+    max-width: 100%;
+}
+
+/* Lists */
+.products {
+    background-color: #e7f4ff;
+    margin: 20px;
+    padding: 25px 40px;
+    border-radius: 15px;
+}
+
+.products h2 {
+    color: #3979a5;
+}
+
+/* Price table */
+.price-section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff0f5;
+    border-radius: 15px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th,
+td {
+    border: 1px solid #d9a8c1;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f6cce0;
+    color: #713b59;
+}
+
+/* Custom order notice */
+.notice {
+    position: relative;
+    background-image: url("images/crochet-flowers.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    margin: 20px;
+    padding: 35px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* Semi-transparent background for readable text */
+.notice h2,
+.notice p,
+.notice a {
+    background-color: rgba(255, 255, 255, 0.88);
+    display: inline-block;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.notice a {
+    color: #a33c73;
+    font-weight: bold;
+}
+
+/* Float example */
+.notice::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Footer */
+footer {
+    background-color: #dff5e1;
+    text-align: center;
+    padding: 15px;
+}
