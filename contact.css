@@ -1,0 +1,160 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff7f8;
+    color: #563b45;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #ffc6d5, #f8d9e8);
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    color: #9b4268;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #783b57;
+    margin: 10px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* Contact section */
+.contact-section {
+    padding: 40px 6%;
+    text-align: center;
+}
+
+.contact-section h2 {
+    color: #a64d79;
+    font-size: 30px;
+}
+
+.intro {
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* Contact layout */
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+}
+
+/* Contact information */
+.contact-info,
+.contact-form {
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+    flex: 1 1 300px;
+    max-width: 500px;
+}
+
+.contact-info h3,
+.contact-form h3 {
+    color: #b34e7b;
+}
+
+.contact-info p {
+    line-height: 1.8;
+}
+
+.contact-info a {
+    color: #c65385;
+}
+
+/* Form fields */
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 10px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e5a9c1;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #e88eaf;
+    border-color: #c65385;
+}
+
+button {
+    background-color: #e88eaf;
+    color: white;
+    border: none;
+    padding: 13px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #ad4e79;
+    transform: scale(1.03);
+}
+
+#formMessage {
+    color: #9b4268;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #f5c5d5;
+    text-align: center;
+    padding: 18px;
+    margin-top: 30px;
+}
+
+/* Mobile responsive design */
+@media (max-width: 600px) {
+    nav a {
+        display: inline-block;
+        margin: 7px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 100%;
+    }
+}
